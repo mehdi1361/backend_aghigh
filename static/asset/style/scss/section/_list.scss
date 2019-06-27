@@ -1,0 +1,899 @@
+//////////////////////////////////////////////////////////////////////// public
+.row-min{
+  margin: 0 -13px;
+  >div{
+    padding: 0 13px;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// activity widget
+.activity-widget-row{
+  margin: 0 -10px;
+  >div{
+    padding: 0 10px;
+  }
+}
+.activity-widget{
+  margin-bottom: 20px;
+  @include set_radius(3px);
+  @include set_webkit(box-shadow,0px 1px 3px rgba(0, 0, 0, 0.2));
+  background: $activity_gray_light;
+  height: 155px;
+  display: block;
+  padding: 20px;
+  padding-top: 0;
+
+  @include set_transition();
+  &:hover{
+    @include set_webkit(box-shadow,0px 6px 8px -3px rgba(0, 0, 0, 0.3));
+    .img{
+      @include set_transform(scale(1.1) rotate(360deg));
+    }
+  }
+
+  >div{
+    display: table;
+    width: 100%;
+    height: 128px;
+
+
+    >div{
+      display: table-cell;
+      @include set_vertical(middle);
+      &:first-child{
+        width: 118px;
+        .img{
+          float: right;
+          @include set_transition(all 0.5s);
+        }
+      }
+    }
+  }
+
+
+  .border{
+    height: 7px;
+    display: block;
+    background: red;
+    @include set_radius(7px);
+    &.border-1{ background: $activity_orange}
+    &.border-2{ background: $activity_red_dark}
+    &.border-3{ background: $activity_blue_light}
+    &.border-4{ background: $activity_red}
+  }
+
+
+  .title{
+    color: $activity_gray_dark;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// activity list
+.activity-item{
+  background: white;
+  @include set_radius(3px);
+  @include set_webkit(box-shadow,0px 1px 3px rgba(0, 0, 0, 0.2));
+  margin-bottom: 30px;
+  overflow: hidden;
+  @include set_transition();
+  &:hover{
+    @include set_webkit(box-shadow,0px 6px 8px -3px rgba(0, 0, 0, 0.3));
+    .image .image_set,.image img{
+      @include set_transform(scale(1.1) rotate(3deg));
+    }
+  }
+
+
+  .image{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    >span{
+      position: absolute;
+      font-size: 12px;
+      color: white;
+      top:5px;
+      right:0;
+      padding-right: 5px;
+      padding-left: 10px;
+      line-height: 26px;
+      height: 26px;
+      z-index: 10;
+
+
+      &:after{
+        position: absolute;
+        right: 98%;
+        top:0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 13px 13px 0;
+      }
+
+
+      &:before{
+        position: absolute;
+        right: 98%;
+        bottom:0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 13px 13px;
+      }
+
+
+      &.green{
+        background: $activity_green;
+        &:after{
+          border-color: transparent $activity_green transparent transparent;
+        }
+        &:before{
+          border-color: transparent transparent $activity_green transparent;
+        }
+      }
+    }
+    .image_set,img{
+      min-height: 1px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      @include set_transition();
+    }
+
+
+    &.load{
+      img{
+        height: auto !important;
+        width: 100% !important;
+      }
+    }
+  }
+
+  .content{
+    padding: 10px;
+  }
+
+  .title{
+    color: $activity_gray_darker;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top:0;
+    margin-bottom:10px;
+    min-height: 50px;
+  }
+
+
+  a .title{
+    @include link_hover_color($activity_gray_darker, $header_orange);
+  }
+
+  ul{
+    display: table;
+    width: 100%;
+    margin:0;
+    min-height: 50px;
+
+
+    li{
+      display: table;
+      float: right;
+      line-height: 25px;
+      color: $activity_gray;
+      margin-left:25px;
+      i{
+        margin-left:6px;
+      }
+
+      a{
+        @include link_hover_color($activity_gray, $header_orange);
+      }
+
+      span.delete{
+        text-decoration: line-through;
+      }
+      span.off{
+        color: $text_orange;
+        margin-right:10px;
+      }
+    }
+  }
+}
+
+.activity-list-slide{
+  .owl-item{
+    padding: 0 2px;
+  }
+  .owl-dots{
+    display: table;
+    margin: 0 auto;
+    .owl-dot{
+      display: block;
+      height: 12px;
+      width: 12px;
+      @include set_radius(50%);
+      margin: 0 4px;
+      background: $activity_gray_dot;
+      float: left;
+      @include set_transition();
+
+      &.active{
+        background: $header_blue;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// activity image
+.activity-image{
+  margin-bottom: 30px;
+  @include set_radius(3px);
+  @include set_webkit(box-shadow,0px 1px 3px rgba(0, 0, 0, 0.2));
+  background: $activity_gray_light;
+  display: table;
+  min-height: 120px;
+  width: 100%;
+
+  >*{
+    display: table-cell;
+    @include set_vertical(top);
+  }
+
+  .image{
+    width: 40%;
+    @include set_image_cover();
+  }
+
+  .content{
+    padding: {
+      top:10px;
+      right: 20px;
+      left:10px;
+      bottom: 10px;
+    };
+
+    .title{
+      font-size: 15px;
+      font-weight: normal;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: $activity_gray_darker;
+      line-height: 30px;
+    }
+
+    .size{
+      font-size: 15px;
+      line-height: 30px;
+      display: block;
+      margin-bottom:10px;
+      direction: ltr;
+      text-align: right;
+    }
+
+    button{
+      float: left;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// activity file
+.activity-file{
+  background: $activity_gray_light;
+  @include set_radius(3px);
+  @include set_webkit(box-shadow,0px 1px 3px rgba(0, 0, 0, 0.2));
+  margin-bottom:10px;
+  display: table;
+  width:100%;
+  overflow: hidden;
+  font-size: 15px;
+  padding-right: 20px;
+
+  .btn{
+    float: left;
+  }
+
+
+  .name{
+    min-width: 256px;
+    display: block;
+    float: right;
+    padding: 9px 0px;
+    padding-left: 20px;
+  }
+
+  .size{
+    display: block;
+    float: right;
+    padding: 9px 0px;
+    direction: ltr;
+    text-align: right;
+    padding-left: 20px;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// label list
+.label-list{
+  display: table;
+  width: 100%;
+  .label{
+    float: right;
+    margin-left:5px;
+    margin-bottom:5px;
+  }
+  a.label{
+    @include set_transition();
+  }
+}
+
+
+//////////////////////////////////////////////////////////////////////// shop banner
+.shop-banner{
+  margin: 0 -8px;
+
+  >div{
+    display: block;
+    float: right;
+    padding: 0 8px;
+    img{
+      width: 100%;
+    }
+
+    &.small{
+      width: 50%;
+    }
+    &.big{
+      width: 100%;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// shop item
+.shopping-item{
+  margin-bottom: 30px;
+  @include set_radius(3px);
+  @include set_webkit(box-shadow,0px 1px 3px rgba(0, 0, 0, 0.2));
+  background: $activity_gray_light;
+  display: table;
+  min-height: 120px;
+  width: 100%;
+
+  >*{
+    display: table-cell;
+    @include set_vertical(top);
+  }
+
+  .image{
+    width: 40%;
+    @include set_image_cover();
+  }
+
+  .content{
+    padding: {
+      top:10px;
+      right: 20px;
+      left:10px;
+      bottom: 10px;
+    };
+
+
+    .title{
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 25px;
+      margin-top:0;
+      min-height: 65px;
+      color: $activity_gray_darker;
+    }
+
+    a .title{
+      @include link_hover_color($activity_gray_darker, $activity_gray);
+    }
+
+    .size{
+      font-size: 14px;
+      line-height: 30px;
+      display: block;
+      direction: ltr;
+      text-align: right;
+      float: right;
+      color: $activity_gray;
+    }
+
+    button{
+      float: left;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// product
+.product-info-1{
+  display: table;
+  width: 100%;
+
+
+  li{
+    float: left;
+    display: table;
+    margin-right:20px;
+    margin-bottom:20px;
+    color: $footer_gray;
+    font-size: 17px;
+    line-height: 30px;
+    i{
+      font-size: 20px;
+      display: block;
+      line-height: 30px;
+      float: left;
+      margin-right:5px;
+    }
+  }
+}
+
+.product-info-2{
+  display: table;
+  width: 100%;
+  li{
+    float: right;
+    display: table;
+    margin-bottom:10px;
+    margin-left:25px;
+    color: $search_gray_dark;
+    font-size: 16px;
+    line-height: 30px;
+    i{
+      font-size: 20px;
+      display: block;
+      line-height: 30px;
+      float: right;
+      margin-left:5px;
+    }
+    span{
+      float: right;
+      margin-left:5px;
+      &.off{
+        color: $text_orange;
+      }
+      &.delete{
+        text-decoration: line-through;
+      }
+    }
+    a{
+      @include link_hover_color($search_gray_dark,$header_orange);
+    }
+  }
+
+
+  i.fa,.subject{
+    color: $header_orange;
+  }
+}
+
+.product-info-3{
+  display: table;
+  width: 100%;
+  .row{
+    display: table-row;
+    margin: 0;
+    padding-bottom: 10px;
+
+
+    >div{
+      display: table-cell;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: block;
+        border:solid thin $activity_gray_light;
+        top:0;
+        right:0;
+      }
+
+
+
+      &.subject{
+        padding: 15px;
+        font-size: 14px;
+        line-height: 30px;
+        color: $activity_gray_dark;
+        background: $activity_gray_light;
+        @include set_radius(0 3px 3px 0);
+        border-bottom: solid white 10px;
+        &:after{
+          @include set_radius(0 3px 3px 0);
+        }
+      }
+
+
+
+      &.text{
+        color: $activity_gray;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 30px;
+        @include set_radius(3px 0 0 3px);
+        border-bottom: solid white 10px;
+        &:after{
+          @include set_radius(3px 0 0 3px);
+        }
+      }
+    }
+  }
+}
+
+
+
+//////////////////////////////////////////////////////////////////////// comment
+.comment-list{
+
+}
+.comment-item{
+  border:solid thin $search_gray_light;
+  display: table;
+  width: 100%;
+  margin-bottom:20px;
+
+  >div{
+    display: table-cell;
+    @include set_vertical(top);
+  }
+
+  .number{
+    width: 330px;
+    background: $activity_gray_light;
+    padding: 15px;
+    padding-top: 10px;
+
+    .title{
+      color: $activity_gray_darker;
+      font-size: 13px;
+      line-height: 30px;
+      margin-top:0;
+      margin-bottom:15px;
+    }
+  }
+
+
+  .send{
+    padding: 15px;
+    padding-top:30px;
+    color: $activity_gray_darker;
+    p{
+      margin-bottom:30px;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    .btn{
+      float: left;
+    }
+  }
+
+  .text{
+    padding: 15px;
+    padding-top:10px;
+    padding-left:25px;
+
+    .top{
+      display: table;
+      width: 100%;
+      margin-bottom:15px;
+      .image{
+        float: right;
+        width: 45px;
+        height: 45px;
+        @include set_image_cover();
+        margin-left:15px;
+      }
+      .name{
+        line-height: 45px;
+        color: $header_blue;
+        font-size: 16px;
+        margin-left:15px;
+        float: right;
+      }
+
+      .fa{
+        float: left;
+        color: $header_orange;
+        font-size: 16px;
+        line-height: 45px;
+        display: block;
+      }
+      a .fa{
+        @include link_hover_color($header_orange);
+      }
+    }
+
+    .content p{
+      margin: 0;
+      color: $search_gray_dark;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+
+  .top{
+    .name{
+      color: $header_blue;
+      font-size: 16px;
+      display: block;
+    }
+  }
+
+
+  .text{
+    p{
+      color: $search_gray_dark;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+}
+
+.comment-point-list{
+  >div{
+    display: table;
+    width: 100%;
+    margin-bottom:10px;
+
+    &:last-child{
+      margin-bottom:0;
+    }
+
+
+    >*{
+      display: table-cell;
+      @include set_vertical(middle);
+    }
+
+
+    >span{
+      width: 57px;
+      color: $activity_gray;
+      font-size: 13px;
+      line-height: 25px;
+    }
+    >div{
+      >div{
+        height: 11px;
+        background: $input_orange_light;
+        @include set_radius(11px);
+        overflow: hidden;
+        position: relative;
+        >div{
+          float: left;
+          height: 11px;
+          background: $header_orange;
+        }
+      }
+    }
+  }
+}
+.blue .comment-point-list{
+  >div{
+    >div{
+      >div{
+        background: $header_blue_light;
+        >div{
+          background: $header_blue;
+        }
+      }
+    }
+  }
+}
+
+
+//////////////////////////////////////////////////////////////////////// notification list
+.notification-list{
+
+}
+.notification-item{
+  cursor: pointer;
+  display: block;
+  padding-bottom: 25px;
+  margin-bottom:20px;
+  border-bottom: solid thin $activity_gray_dot;
+
+
+  &:last-child{
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+
+
+  .top{
+    display: table;
+    width: 100%;
+    .title{
+      float: right;
+      margin-bottom:13px;
+    }
+    time{
+      float: left;
+      margin-bottom:13px;
+    }
+  }
+
+
+  time{
+    color: $header_orange;
+    font-size: 17px;
+  }
+
+  .title{
+    font-size: 16px;
+    font-weight: normal;
+    margin-top:0;
+    color: $activity_gray_darker;
+    @include set_transition();
+    line-height: 30px;
+  }
+
+
+  .text{
+    display: block;
+    margin: 0;
+    text-align: justify;
+    font-size: 14px;
+    color: $search_gray_dark;
+  }
+
+
+  &.new{
+    .title{
+      font-weight: bold;
+      color: $header_blue;
+    }
+  }
+
+  &.open{
+    .text{
+
+    }
+  }
+  &:not(.open)
+  {
+    &:hover{
+      .title{
+        color: $header_orange !important;
+      }
+    }
+
+    .text{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// tabs
+.nav-tabs{
+  display: table;
+  width: 100%;
+  border:none;
+  margin-bottom:20px;
+
+
+  li{
+    display: table;
+    float: right;
+    margin: 0;
+    padding: 0;
+    a{
+      display: block;
+      text-align: center;
+      margin: 0;
+      border:none !important;
+      @include set_radius(0);
+      color: $header_blue;
+      font-size: 17px;
+      line-height: 30px;
+      padding: 10px;
+      font-weight:bold;
+      @include link_hover_bg($activity_gray_light, $header_orange);
+      &:hover{
+        color: white;
+      }
+    }
+
+    &.active{
+      a{
+        background: white !important;
+        color: $header_blue !important;
+        @include set_webkit(box-shadow,0px -5px 0px $header_orange);
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// responsive
+@media (min-width: 481px) {
+  .activity-file{
+    .btn{
+      @include set_radius(0);
+      @include set_webkit(box-shadow,none !important);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .comment-item .number{
+    width: 220px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .comment-item{
+    >div{
+      display: table;
+      width: 100% !important;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .activity-file{
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+
+     .title{
+       width: 100%;
+     }
+    .size{
+      width: 100%;
+      padding: 0;
+    }
+
+    .btn{
+      padding: 5px 20px;
+    }
+  }
+  .nav-tabs li a{
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 460px) {
+  .shop-banner{
+    >div{
+      width: 100% !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

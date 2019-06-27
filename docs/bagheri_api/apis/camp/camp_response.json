@@ -1,0 +1,32 @@
+{
+  "count": 2000,
+  "per_page": 100,
+  "next_page": 2,
+  "prev_page": 1,
+  "camps": [
+    {
+      "bagheri_id": 1,
+      "name": "نام فارسی قرارگاه",
+      "county_id": 1,
+      "teacher_id": 1
+    },
+    {
+      "bagheri_id": 2,
+      "name": "نام فارسی قرارگاه",
+      "county_id": 2,
+      "teacher_id": 2
+    },
+    {
+      "bagheri_id": 3,
+      "name": "نام فارسی قرارگاه",
+      "county_id": 3,
+      "teacher_id": 3
+    },
+    {
+      "bagheri_id": 4,
+      "name": "نام فارسی قرارگاه",
+      "county_id": 4,
+      "teacher_id": 4
+    }
+  ]
+}

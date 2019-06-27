@@ -1,0 +1,40 @@
+info:
+  description: "Student api response"
+  required:
+    - "count"
+    - "per_page"
+    - "next_page"
+    - "prev_page"
+    - "students"
+  properties:
+    count:
+      type: "number"
+    per_page:
+      type: "number"
+    next_page:
+      type: "number"
+    prev_page:
+      type: "number"
+    students:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          first_name:
+            type: "string"
+          last_name:
+            type: "string"
+          phone_number:
+            type: "string"
+          #
+          # can be female or male
+          #
+          gender:
+            type: "string"
+          #
+          # Student national id
+          #
+          username:
+            type: "string"
+          bagheri_school_id:
+            type: "number"

@@ -1,0 +1,5 @@
+nginx.conf
+/supervisor.conf
+uwsgi.ini
+VARS
+sock

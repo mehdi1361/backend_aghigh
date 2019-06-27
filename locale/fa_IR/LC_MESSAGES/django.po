@@ -1,0 +1,1659 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-13 19:14+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/activity/apps.py:7 apps/activity/models.py:230
+#: apps/activity/models.py:356 apps/activity/models.py:393
+#: apps/activity/models.py:430
+msgid "Activity"
+msgstr "فعالیت"
+
+#: apps/activity/models.py:18 apps/activity/models.py:175
+#: apps/common/models.py:55 apps/common/models.py:76 apps/common/models.py:94
+#: apps/common/models.py:121 apps/league/models.py:10 apps/league/models.py:24
+#: apps/league/models.py:38 apps/league/models.py:53
+#: apps/notification/models.py:20 apps/question/models/questions.py:34
+#: apps/shop/models.py:70 apps/shop/models.py:90 apps/shop/models.py:113
+#: apps/shop/models.py:133 apps/shop/models.py:265 apps/shop/models.py:346
+#: apps/shop/models.py:399
+msgid "Title"
+msgstr "عنوان"
+
+#: apps/activity/models.py:19 apps/league/models.py:11 apps/league/models.py:25
+#: apps/league/models.py:39 apps/league/models.py:54 apps/shop/models.py:53
+msgid "Slug"
+msgstr "نام انگلیسی بدون فاصله"
+
+#: apps/activity/models.py:20 apps/league/models.py:19 apps/league/models.py:20
+msgid "Department"
+msgstr "محور فعالیت"
+
+#: apps/activity/models.py:21 apps/question/models/managment.py:19
+#: apps/question/models/questions.py:66
+msgid "Status"
+msgstr "وضعیت"
+
+#: apps/activity/models.py:22 apps/league/models.py:13
+msgid "Max Count Activity"
+msgstr "حداکثر تعداد فعالیت"
+
+#: apps/activity/models.py:24
+msgid "Hide in List Web"
+msgstr ""
+
+#: apps/activity/models.py:25
+msgid "Hide in List App"
+msgstr ""
+
+#: apps/activity/models.py:32
+msgid "Activity Category"
+msgstr "شاخه فعالیت"
+
+#: apps/activity/models.py:33
+msgid "Activity Categories"
+msgstr "شاخه های فعالیت"
+
+#: apps/activity/models.py:41 apps/activity/models.py:60
+msgid "Label"
+msgstr "برچسب"
+
+#: apps/activity/models.py:47
+msgid "Order"
+msgstr "ترتیب"
+
+#: apps/activity/models.py:51
+#, fuzzy
+#| msgid "Group"
+msgid "Child Group"
+msgstr "گروه"
+
+#: apps/activity/models.py:53
+msgid "Show Lable"
+msgstr ""
+
+#: apps/activity/models.py:65 apps/shop/models.py:99
+msgid "order"
+msgstr "ترتیب"
+
+#: apps/activity/models.py:74
+msgid "Function name"
+msgstr "نام تابع"
+
+#: apps/activity/models.py:81
+msgid "Function total type"
+msgstr "نوع محاسبه از جمع"
+
+#: apps/activity/models.py:83
+msgid "Params"
+msgstr "مقادیر"
+
+#: apps/activity/models.py:85
+msgid "Field type"
+msgstr "نوع فیلد"
+
+#: apps/activity/models.py:86 apps/activity/models.py:171
+#: apps/question/models/questions.py:75 apps/shop/models.py:65
+#: apps/shop/models.py:136
+msgid "Category"
+msgstr "شاخه"
+
+#: apps/activity/models.py:88
+msgid "Group"
+msgstr "گروه"
+
+#: apps/activity/models.py:98
+msgid "Additional Field"
+msgstr "فیلد اضافه"
+
+#: apps/activity/models.py:99
+msgid "Additional Fields"
+msgstr "فیلدهای اضافه"
+
+#: apps/activity/models.py:116 apps/emtiaz/models.py:44 apps/shop/models.py:299
+#: apps/shop/models.py:379
+msgid "value"
+msgstr "مقدار"
+
+#: apps/activity/models.py:120
+msgid "Group Select"
+msgstr ""
+
+#: apps/activity/models.py:147
+msgid "Drop Down Form Some Additional Field"
+msgstr "فیلد اضافه"
+
+#: apps/activity/models.py:153 apps/announcements/models.py:79
+#: apps/league/models.py:98 apps/league/models.py:99
+msgid "School"
+msgstr "مدرسه"
+
+#: apps/activity/models.py:160 apps/shop/models.py:412
+#: apps/user/models/student.py:17 apps/user/models/student.py:18
+msgid "Student"
+msgstr "دانش آموز"
+
+#: apps/activity/models.py:166
+msgid "Checker"
+msgstr "بررسی کننده"
+
+#: apps/activity/models.py:172
+msgid "Category Status"
+msgstr "تایید شاخه"
+
+#: apps/activity/models.py:173 apps/activity/models.py:176
+#: apps/activity/models.py:180 apps/activity/models.py:184
+#: apps/activity/models.py:188 apps/activity/models.py:192
+#: apps/activity/models.py:360 apps/activity/models.py:396
+#: apps/activity/models.py:438 apps/emtiaz/models.py:24 apps/shop/models.py:278
+msgid "Comment"
+msgstr "دیدگاه"
+
+#: apps/activity/models.py:177
+msgid "Title status"
+msgstr "تایید عنوان"
+
+#: apps/activity/models.py:179
+msgid "Location"
+msgstr "مکان"
+
+#: apps/activity/models.py:181
+msgid "Location status"
+msgstr "تایید مکان"
+
+#: apps/activity/models.py:183
+msgid "Start time date"
+msgstr "زمان شروع"
+
+#: apps/activity/models.py:185
+msgid "Start date status"
+msgstr " تایید زمان شروع"
+
+#: apps/activity/models.py:187
+msgid "End time date"
+msgstr "زمان"
+
+#: apps/activity/models.py:189
+msgid "End date status"
+msgstr "تایید زمان پایان"
+
+#: apps/activity/models.py:191 apps/shop/models.py:134 apps/shop/models.py:347
+msgid "Description"
+msgstr "توضیحات"
+
+#: apps/activity/models.py:193
+msgid "Description status"
+msgstr " تایید توضیحات"
+
+#: apps/activity/models.py:195
+#, fuzzy
+#| msgid "Conversion Comment"
+msgid "General comment"
+msgstr "دیدگاه گفتگو"
+
+#: apps/activity/models.py:197 apps/activity/models.py:334
+#: apps/activity/models.py:335
+msgid "Activity State"
+msgstr "وضعیت فعالیت"
+
+#: apps/activity/models.py:200
+#, fuzzy
+#| msgid "Comment"
+msgid "Comments Count"
+msgstr "دیدگاه"
+
+#: apps/activity/models.py:202 apps/activity/models.py:331
+#: apps/activity/models.py:348 apps/announcements/models.py:24
+#: apps/announcements/models.py:80 apps/common/models.py:25
+#: apps/common/models.py:65 apps/shop/models.py:30 apps/shop/models.py:58
+#: apps/shop/models.py:72 apps/shop/models.py:101 apps/shop/models.py:116
+#: apps/shop/models.py:151 apps/shop/models.py:256 apps/shop/models.py:280
+#: apps/shop/models.py:332 apps/shop/models.py:381 apps/shop/models.py:409
+msgid "Created at"
+msgstr "ایجاد شده"
+
+#: apps/activity/models.py:203 apps/announcements/models.py:25
+#: apps/announcements/models.py:81 apps/common/models.py:26
+#: apps/shop/models.py:31 apps/shop/models.py:59 apps/shop/models.py:73
+#: apps/shop/models.py:102 apps/shop/models.py:117 apps/shop/models.py:152
+#: apps/shop/models.py:257 apps/shop/models.py:281 apps/shop/models.py:382
+#: apps/shop/models.py:410
+msgid "Updated at"
+msgstr "بروزسانی در"
+
+#: apps/activity/models.py:204
+msgid "Accepted at"
+msgstr "تایید شده در تاریخ"
+
+#: apps/activity/models.py:206
+msgid "Vip"
+msgstr "نمایش دراسلایدر"
+
+#: apps/activity/models.py:213
+msgid "Point System"
+msgstr "امتیاز سیستمی"
+
+#: apps/activity/models.py:215
+msgid "Reject count"
+msgstr "تعداد رد شدن توسط مربی"
+
+#: apps/activity/models.py:221 apps/announcements/models.py:87
+#: apps/common/models.py:97 apps/common/models.py:124
+#: apps/question/models/managment.py:40 apps/question/models/questions.py:35
+#: apps/question/models/questions.py:97 apps/question/models/questions.py:160
+#: apps/question/models/questions.py:190 apps/shop/models.py:26
+#: apps/shop/models.py:157 apps/shop/models.py:417
+msgid "Gender"
+msgstr "جنسیت"
+
+#: apps/activity/models.py:224
+msgid "use_in_league"
+msgstr ""
+
+#: apps/activity/models.py:231
+msgid "Activities"
+msgstr "فعالیت ها"
+
+#: apps/activity/models.py:277 apps/shop/models.py:413
+msgid "get_coach"
+msgstr "مربی"
+
+#: apps/activity/models.py:278
+msgid "get_student_name"
+msgstr "مسؤل انجمن"
+
+#: apps/activity/models.py:280
+msgid "get_school_name"
+msgstr "نام مدرسه"
+
+#: apps/activity/models.py:286 apps/activity/models.py:292
+msgid "get_province_name"
+msgstr "نام استان"
+
+#: apps/activity/models.py:354 apps/activity/models.py:389
+#: apps/common/models.py:61 apps/shop/models.py:193
+msgid "Address"
+msgstr "آدرس"
+
+#: apps/activity/models.py:357 apps/activity/models.py:394
+#: apps/activity/models.py:437 apps/activity/static.py:24
+msgid "Accept"
+msgstr "تایید شده"
+
+#: apps/activity/models.py:361 apps/activity/models.py:395
+#: apps/shop/models.py:197 apps/shop/models.py:228
+msgid "Archive"
+msgstr "آرشیو"
+
+#: apps/activity/models.py:364 apps/announcements/models.py:114
+#: apps/question/models/questions.py:168
+msgid "Download"
+msgstr "دانلود و نمایش"
+
+#: apps/activity/models.py:369 apps/activity/models.py:370
+msgid "FileActivity"
+msgstr "فایل های فعالیت"
+
+#: apps/activity/models.py:415 apps/activity/models.py:416
+msgid "ImageActivity"
+msgstr "عکس های فعالیت"
+
+#: apps/activity/models.py:431
+msgid "Field Name"
+msgstr "نام فیلد"
+
+#: apps/activity/models.py:433
+msgid "Value"
+msgstr "مقدار"
+
+#: apps/activity/models.py:441
+msgid "Field Status"
+msgstr "وضعیت فیلد"
+
+#: apps/activity/models.py:442
+msgid "Field Statuses"
+msgstr "وضعیت فیلد"
+
+#: apps/activity/models.py:452
+msgid "First Like"
+msgstr ""
+
+#: apps/activity/models.py:461 apps/shop/models.py:254 apps/shop/models.py:260
+msgid "Rate"
+msgstr "امتیاز"
+
+#: apps/activity/models.py:462 apps/shop/models.py:261
+msgid "Rates"
+msgstr "امتیازات"
+
+#: apps/activity/models.py:480 apps/activity/models.py:481
+#, fuzzy
+#| msgid "Activity Category"
+msgid "Activity daily report"
+msgstr "شاخه فعالیت"
+
+#: apps/activity/models.py:491 apps/activity/models.py:492
+#, fuzzy
+#| msgid "Student Count"
+msgid "Student daily report"
+msgstr "تعداد دانش آموز"
+
+#: apps/activity/models.py:496 apps/schedule/models/events.py:60
+#: apps/schedule/models/events.py:453 apps/shop/models.py:14
+msgid "title"
+msgstr "عنوان"
+
+#: apps/activity/models.py:499
+msgid "Categories report"
+msgstr "دسته بندی گزارش"
+
+#: apps/activity/models.py:500
+msgid "Categories reports"
+msgstr "دسته بندی گزارش ها"
+
+#: apps/activity/models.py:509
+#, fuzzy
+#| msgid "Category"
+msgid "category"
+msgstr "شاخه"
+
+#: apps/activity/models.py:510
+msgid "content"
+msgstr ""
+
+#: apps/activity/models.py:516
+msgid "Report Abuse"
+msgstr "گزارش سو‌‌‌‌ء استفاده"
+
+#: apps/activity/models.py:517
+msgid "Report Abuses"
+msgstr "گزارش های سوء استفاده"
+
+#: apps/activity/static.py:16 apps/announcements/models.py:61
+#: apps/shop/models.py:130 apps/shop/models.py:392
+msgid "female"
+msgstr "زن"
+
+#: apps/activity/static.py:17 apps/announcements/models.py:62
+#: apps/shop/models.py:131 apps/shop/models.py:393
+msgid "male"
+msgstr "مرد"
+
+#: apps/activity/static.py:21
+msgid "New Activity"
+msgstr "فعالیت جدید"
+
+#: apps/activity/static.py:22
+msgid "Should Edit"
+msgstr "در حال ویرایش توسط دانش آموز"
+
+#: apps/activity/static.py:23
+msgid "Should Review"
+msgstr "در حال بررسی توسط مربی"
+
+#: apps/activity/static.py:25
+msgid "Temporary in league"
+msgstr "بدون بررسی به لیگ رفته"
+
+#: apps/activity/static.py:26
+#, fuzzy
+#| msgid "Temporary Remove"
+msgid "Temporary archive"
+msgstr "پاک شده از لیگ"
+
+#: apps/activity/static.py:27
+msgid "Ban"
+msgstr "عدم رعایت ضوابط"
+
+#: apps/announcements/admin.py:51 apps/announcements/admin.py:75
+#: apps/announcements/models.py:21 apps/announcements/models.py:96
+#: apps/shop/models.py:137 apps/shop/models.py:253 apps/shop/models.py:320
+#: apps/shop/models.py:329
+msgid "User"
+msgstr "کاربر"
+
+#: apps/announcements/apps.py:7 apps/announcements/models.py:38
+msgid "Announcements"
+msgstr "اطلاعیه ها"
+
+#: apps/announcements/models.py:14
+msgid "Announcement Title"
+msgstr "متن اطلاعیه"
+
+#: apps/announcements/models.py:15
+msgid "Announcement Description"
+msgstr "توضیحات اطلاعیه"
+
+#: apps/announcements/models.py:18 apps/common/models.py:116
+#: apps/shop/models.py:407 apps/user/models/base.py:22
+msgid "Image"
+msgstr "عکس"
+
+#: apps/announcements/models.py:22
+msgid "Has Date"
+msgstr "در تقویم قرار گیرد؟"
+
+#: apps/announcements/models.py:23
+msgid "Date"
+msgstr "تاریخ/زمان"
+
+#: apps/announcements/models.py:27
+#, fuzzy
+#| msgid "Date Time"
+msgid "Release Time"
+msgstr "تاریخ/زمان"
+
+#: apps/announcements/models.py:37 apps/announcements/models.py:97
+msgid "Announcement"
+msgstr "اطلاعیه"
+
+#: apps/announcements/models.py:63 apps/shop/models.py:129
+#: apps/shop/models.py:391
+msgid "both"
+msgstr "هر دو"
+
+#: apps/announcements/models.py:67
+msgid "Students"
+msgstr "دانش آموزها"
+
+#: apps/announcements/models.py:68 apps/league/models.py:27
+#: apps/user/models/teacher.py:41
+msgid "Coaches"
+msgstr "مربی ها"
+
+#: apps/announcements/models.py:69
+msgid "Province Coach"
+msgstr "مسؤلین استان ها"
+
+#: apps/announcements/models.py:70
+msgid "County Coach"
+msgstr "مسؤلین شهرستان"
+
+#: apps/announcements/models.py:71
+msgid "Camp Coach"
+msgstr "مسؤلین قرارگاه ها"
+
+#: apps/announcements/models.py:72
+msgid "Countries"
+msgstr "مسولین کل"
+
+#: apps/announcements/models.py:75
+msgid "User Type Receiver"
+msgstr "نوع گیرنده"
+
+#: apps/announcements/models.py:76 apps/league/models.py:33
+#: apps/league/models.py:41 apps/league/models.py:76
+msgid "Province"
+msgstr "استان"
+
+#: apps/announcements/models.py:77 apps/league/models.py:48
+#: apps/league/models.py:75
+msgid "County"
+msgstr "شهر"
+
+#: apps/announcements/models.py:78 apps/league/models.py:63
+#: apps/league/models.py:74
+msgid "Camp"
+msgstr "قرارگاه"
+
+#: apps/announcements/models.py:91
+msgid "Announcement Receiver"
+msgstr "دریافت کننده گان"
+
+#: apps/announcements/models.py:92
+msgid "Announcement Receivers"
+msgstr "دریافت کننده گان"
+
+#: apps/announcements/models.py:98
+msgid "Seen at"
+msgstr "دیده شده"
+
+#: apps/announcements/models.py:101 apps/announcements/models.py:102
+#, fuzzy
+#| msgid "Announcement Receiver"
+msgid "Announcement Seen History"
+msgstr "دریافت کننده گان"
+
+#: apps/announcements/models.py:108 apps/common/models.py:142
+#: apps/question/models/questions.py:152 apps/shop/models.py:222
+msgid "File"
+msgstr "فایل"
+
+#: apps/announcements/models.py:135
+msgid "Announcement File"
+msgstr "فایل اطلاعیه"
+
+#: apps/announcements/models.py:136
+msgid "Announcement Files"
+msgstr "فایل های اطلاعیه"
+
+#: apps/common/apps.py:8
+msgid "Common"
+msgstr "سیستم"
+
+#: apps/common/models.py:16
+msgid "Unsupported file extension."
+msgstr "یک فایل معتبر بارگذاری کنید.(mp3, mp4, doc, ...)"
+
+#: apps/common/models.py:54
+msgid "Version"
+msgstr "ورژن"
+
+#: apps/common/models.py:56
+msgid "Message"
+msgstr "پیام"
+
+#: apps/common/models.py:57
+msgid "Type App"
+msgstr ""
+
+#: apps/common/models.py:71 apps/common/models.py:72
+msgid "Apk Release"
+msgstr "ورژن اپلیکیشن"
+
+#: apps/common/models.py:77
+#, fuzzy
+#| msgid "Apk Release"
+msgid "ApkRelease"
+msgstr "ورژن اپلیکیشن"
+
+#: apps/common/models.py:80 apps/common/models.py:81
+#, fuzzy
+#| msgid "Apk Release"
+msgid "Apk Change Release"
+msgstr "ورژن اپلیکیشن"
+
+#: apps/common/models.py:95 apps/common/models.py:122
+msgid "Obj"
+msgstr "فایل"
+
+#: apps/common/models.py:96
+msgid "Image size"
+msgstr "سایز عکس"
+
+#: apps/common/models.py:117
+msgid "Images"
+msgstr "عکس ها"
+
+#: apps/common/models.py:123
+msgid "File size"
+msgstr "سایز فایل"
+
+#: apps/common/models.py:143
+msgid "Files"
+msgstr "فایل ها"
+
+#: apps/common/models.py:152
+msgid "IdPart"
+msgstr ""
+
+#: apps/common/models.py:154
+msgid "NamePart"
+msgstr ""
+
+#: apps/common/models.py:155
+#, fuzzy
+#| msgid "Status"
+msgid "Status Disable"
+msgstr "وضعیت"
+
+#: apps/common/models.py:156
+#, fuzzy
+#| msgid "Status"
+msgid "Status Current"
+msgstr "وضعیت"
+
+#: apps/common/models.py:157
+msgid "AdminAccess"
+msgstr ""
+
+#: apps/common/models.py:158
+#, fuzzy
+#| msgid "Message"
+msgid "MessageDisable"
+msgstr "پیام"
+
+#: apps/common/models.py:159
+#, fuzzy
+#| msgid "Start date status"
+msgid "Start Date Disable"
+msgstr " تایید زمان شروع"
+
+#: apps/common/models.py:160
+#, fuzzy
+#| msgid "End date status"
+msgid "End Date Disable"
+msgstr "تایید زمان پایان"
+
+#: apps/common/models.py:161
+msgid "Hidden"
+msgstr ""
+
+#: apps/common/models.py:162
+#, fuzzy
+#| msgid "Color event"
+msgid "Color"
+msgstr "رنگ رخداد"
+
+#: apps/common/models.py:184
+msgid "DisableManager"
+msgstr ""
+
+#: apps/common/models.py:185
+msgid "مدیریت بخش های غیرفعال"
+msgstr ""
+
+#: apps/emtiaz/apps.py:7
+msgid "Emtiaz"
+msgstr "امتیاز"
+
+#: apps/emtiaz/models.py:10
+msgid "Title Param"
+msgstr "عنوان پارامتر"
+
+#: apps/emtiaz/models.py:16 apps/emtiaz/models.py:17 apps/emtiaz/models.py:53
+#: apps/shop/models.py:271 apps/shop/models.py:272 apps/shop/models.py:308
+msgid "Param"
+msgstr "پارامتر"
+
+#: apps/emtiaz/models.py:21
+msgid "activity"
+msgstr "فعالیت"
+
+#: apps/emtiaz/models.py:25
+msgid "status"
+msgstr "وضعیت"
+
+#: apps/emtiaz/models.py:33
+msgid "Activity Comment"
+msgstr "دیدگاه فعالیت"
+
+#: apps/emtiaz/models.py:34
+msgid "Activity Comments"
+msgstr "دیدگاه فعالیت"
+
+#: apps/emtiaz/models.py:42
+msgid "activity comment"
+msgstr "دیدگاه فعالیت"
+
+#: apps/emtiaz/models.py:43 apps/shop/models.py:298
+msgid "param"
+msgstr "پارامتر"
+
+#: apps/emtiaz/models.py:47
+msgid "Param Activity Comment"
+msgstr "امتیاز هر کامنت"
+
+#: apps/emtiaz/models.py:48
+msgid "Param Activity Comments"
+msgstr "امتیاز هر کامنت"
+
+#: apps/emtiaz/models.py:54 apps/shop/models.py:310
+msgid "Sum"
+msgstr "نتیجه"
+
+#: apps/emtiaz/models.py:55 apps/shop/models.py:311
+msgid "Count"
+msgstr "تعداد"
+
+#: apps/emtiaz/models.py:58
+msgid "Sum Activity Param"
+msgstr "مجموع امتیازات پارامترهای فعالیت"
+
+#: apps/emtiaz/models.py:59
+msgid "Sum Activity Params"
+msgstr "مجموع امتیازات پارامترهای فعالیت"
+
+#: apps/emtiaz/models.py:64
+msgid "g1"
+msgstr ""
+
+#: apps/emtiaz/models.py:65
+msgid "g2"
+msgstr ""
+
+#: apps/emtiaz/models.py:66
+msgid "g3"
+msgstr ""
+
+#: apps/emtiaz/models.py:67
+msgid "g4"
+msgstr ""
+
+#: apps/emtiaz/models.py:68
+#, fuzzy
+#| msgid "Percent"
+msgid "percent"
+msgstr "درصدی"
+
+#: apps/emtiaz/models.py:70
+msgid "final_point"
+msgstr ""
+
+#: apps/emtiaz/models.py:71
+#, fuzzy
+#| msgid "activity"
+msgid "count_all_activity"
+msgstr "فعالیت"
+
+#: apps/emtiaz/models.py:72
+msgid "count_best_activity"
+msgstr ""
+
+#: apps/emtiaz/models.py:77 apps/emtiaz/models.py:78
+#, fuzzy
+#| msgid "History"
+msgid "History Score"
+msgstr "تاریخچه"
+
+#: apps/league/apps.py:7
+msgid "League"
+msgstr "لیگ"
+
+#: apps/league/models.py:12
+msgid "Max Point"
+msgstr "حداکثر امتیاز"
+
+#: apps/league/models.py:26 apps/league/models.py:40 apps/league/models.py:55
+#: apps/shop/models.py:42 apps/shop/models.py:328
+msgid "Code"
+msgstr "کد"
+
+#: apps/league/models.py:34
+msgid "Provinces"
+msgstr "استان"
+
+#: apps/league/models.py:42 apps/league/models.py:56
+#: apps/user/models/teacher.py:40
+msgid "Coach"
+msgstr "مربی ها"
+
+#: apps/league/models.py:49
+msgid "Counties"
+msgstr "شهرها"
+
+#: apps/league/models.py:57
+msgid "Camp County"
+msgstr "قرارگاه شهر"
+
+#: apps/league/models.py:64
+msgid "Camps"
+msgstr "قرارگاه ها"
+
+#: apps/league/models.py:78
+msgid "Voters"
+msgstr "رای دهندگان"
+
+#: apps/league/models.py:81
+msgid "rank"
+msgstr "رده"
+
+#: apps/league/models.py:86
+msgid "Student Count"
+msgstr "تعداد دانش آموز"
+
+#: apps/league/models.py:87
+msgid "Anjoman Count"
+msgstr "تعداد افراد انجمن"
+
+#: apps/league/models.py:88 apps/question/models/questions.py:73
+msgid "Point"
+msgstr "امتیاز"
+
+#: apps/league/models.py:89
+msgid "Rank"
+msgstr "رده"
+
+#: apps/league/models.py:90
+msgid "Province Rank"
+msgstr "رده استان"
+
+#: apps/league/models.py:91
+msgid "County Rank"
+msgstr "رده شهر"
+
+#: apps/notification/apps.py:7 apps/notification/models.py:34
+msgid "Notification"
+msgstr "اعلان"
+
+#: apps/notification/models.py:13 apps/notification/models.py:14
+msgid "FcmToken User"
+msgstr "توکن fcm کاربر"
+
+#: apps/notification/models.py:18
+msgid "Receiver"
+msgstr "گیرنده"
+
+#: apps/notification/models.py:19
+msgid "Seen"
+msgstr "دیده شده"
+
+#: apps/notification/models.py:21
+msgid "body"
+msgstr "متن"
+
+#: apps/notification/models.py:22
+msgid "Date Time"
+msgstr "تاریخ/زمان"
+
+#: apps/notification/models.py:25
+msgid "body_action"
+msgstr "مکان"
+
+#: apps/notification/models.py:35
+msgid "Notifications"
+msgstr "اعلانات"
+
+#: apps/question/apps.py:7 apps/question/models/managment.py:17
+#: apps/question/models/managment.py:30 apps/question/models/questions.py:147
+#: apps/question/models/questions.py:189
+msgid "Question"
+msgstr "سوال"
+
+#: apps/question/models/managment.py:16 apps/question/models/questions.py:201
+#: apps/user/models/advisor.py:36 apps/user/models/advisor.py:37
+msgid "Advisor"
+msgstr "مسولین سوالات"
+
+#: apps/question/models/managment.py:18
+#, fuzzy
+#| msgid "Created at"
+msgid "Created time"
+msgstr "ایجاد شده"
+
+#: apps/question/models/managment.py:22
+msgid "Advisor Work Table"
+msgstr "میزکار"
+
+#: apps/question/models/managment.py:24
+msgid "Advisor Work Tables"
+msgstr "میزکار"
+
+#: apps/question/models/managment.py:29 apps/question/models/questions.py:72
+msgid "Subject"
+msgstr "موضوع"
+
+#: apps/question/models/managment.py:31 apps/question/models/questions.py:200
+msgid "Answer"
+msgstr "پاسخ"
+
+#: apps/question/models/managment.py:32
+msgid "Create DateTime"
+msgstr "زمان ایجاد"
+
+#: apps/question/models/managment.py:33 apps/question/models/questions.py:28
+#: apps/question/models/questions.py:33 apps/user/models/advisor.py:29
+msgid "Question Base Category"
+msgstr "شاخه سوال"
+
+#: apps/question/models/managment.py:37 apps/user/models/advisor.py:30
+msgid "Sub Category"
+msgstr "محور"
+
+#: apps/question/models/managment.py:43
+#, fuzzy
+#| msgid "Accepted at"
+msgid "Is Accepted"
+msgstr "تایید شده در تاریخ"
+
+#: apps/question/models/managment.py:50
+msgid "Faq Question Creator"
+msgstr "ایجاد کننده سوال متداول"
+
+#: apps/question/models/managment.py:54
+msgid "Faq Question"
+msgstr "سوال متداول"
+
+#: apps/question/models/managment.py:55
+msgid "Faq Questions"
+msgstr "سوالات متداول"
+
+#: apps/question/models/questions.py:18
+msgid "Category Code"
+msgstr "شاخه"
+
+#: apps/question/models/questions.py:29
+msgid "Question Base Categories"
+msgstr "شاخه سوالات"
+
+#: apps/question/models/questions.py:41
+msgid "Question Category"
+msgstr "محور سوالات"
+
+#: apps/question/models/questions.py:42
+msgid "Question Categories"
+msgstr "محور های سوالات"
+
+#: apps/question/models/questions.py:60 apps/user/models/advisor.py:10
+msgid "advisor"
+msgstr "کارشناس"
+
+#: apps/question/models/questions.py:61 apps/user/models/advisor.py:11
+msgid "expert"
+msgstr "مشاور"
+
+#: apps/question/models/questions.py:62 apps/user/models/advisor.py:12
+msgid "top expert"
+msgstr "کارشناس ارشد"
+
+#: apps/question/models/questions.py:65
+msgid "State"
+msgstr "وضعیت"
+
+#: apps/question/models/questions.py:68 apps/shop/models.py:95
+#: apps/shop/models.py:401
+msgid "Type"
+msgstr "نوع"
+
+#: apps/question/models/questions.py:69 apps/question/models/questions.py:198
+msgid "Body"
+msgstr "متن"
+
+#: apps/question/models/questions.py:70 apps/question/models/questions.py:199
+msgid "Create datetime"
+msgstr "زمان ایجاد"
+
+#: apps/question/models/questions.py:74
+msgid "Main Category"
+msgstr "شاخه اصلی"
+
+#: apps/question/models/questions.py:76
+msgid "View count"
+msgstr "تعداد مشاهده"
+
+#: apps/question/models/questions.py:77
+msgid "Creator"
+msgstr "ایجاد کننده"
+
+#: apps/question/models/questions.py:78
+msgid "Has In Faq"
+msgstr ""
+
+#: apps/question/models/questions.py:84
+msgid "Answer to"
+msgstr "در پاسخ به"
+
+#: apps/question/models/questions.py:90
+msgid "not allow user"
+msgstr "کاربران بلاک شده"
+
+#: apps/question/models/questions.py:148
+msgid "Questions"
+msgstr "سوالات"
+
+#: apps/question/models/questions.py:153
+msgid "Uploader"
+msgstr "بارگذاری کننده"
+
+#: apps/question/models/questions.py:154
+msgid "Uploader ip"
+msgstr "آی پی بارگذاری کننده"
+
+#: apps/question/models/questions.py:155
+msgid "Is question"
+msgstr "سوال است؟"
+
+#: apps/question/models/questions.py:187
+msgid "Reject datetime"
+msgstr "زمان رد"
+
+#: apps/question/models/questions.py:188
+msgid "Reject by"
+msgstr "رد شده توسط"
+
+#: apps/question/models/questions.py:193
+msgid "Question Reject History"
+msgstr "تاریخچه رد سوال"
+
+#: apps/question/models/questions.py:194
+msgid "Question Reject Histories"
+msgstr "تاریخچه های رد سوال"
+
+#: apps/question/models/questions.py:204
+msgid "Conversion Comment"
+msgstr "دیدگاه گفتگو"
+
+#: apps/question/models/questions.py:205
+msgid "Conversion Comments"
+msgstr "دیدگاه های گفتگو"
+
+#: apps/schedule/apps.py:7
+msgid "schedule"
+msgstr "تقویم"
+
+#: apps/schedule/models/annual.py:16 apps/schedule/models/annual.py:17
+msgid "date type"
+msgstr "نوع تاریخ"
+
+#: apps/schedule/models/annual.py:18
+msgid "day of annual"
+msgstr "روز مناسبت"
+
+#: apps/schedule/models/annual.py:19
+msgid "month of annual"
+msgstr "ماه مناسبت"
+
+#: apps/schedule/models/annual.py:20
+#, fuzzy
+#| msgid "kind of event"
+msgid "title of event"
+msgstr "نوع رویداد"
+
+#: apps/schedule/models/annual.py:26
+msgid "Annual Event"
+msgstr "مناسبت سالیانه"
+
+#: apps/schedule/models/annual.py:27
+msgid "Annual Events"
+msgstr "مناسبتهای سالیانه"
+
+#: apps/schedule/models/calendars.py:141 apps/schedule/models/rules.py:52
+msgid "name"
+msgstr "نام"
+
+#: apps/schedule/models/calendars.py:142
+msgid "slug"
+msgstr "انگلیسی"
+
+#: apps/schedule/models/calendars.py:146 apps/schedule/models/calendars.py:223
+#: apps/schedule/models/events.py:84
+#, fuzzy
+#| msgid "Calender"
+msgid "calendar"
+msgstr "تقویم"
+
+#: apps/schedule/models/calendars.py:147
+#, fuzzy
+#| msgid "Calender"
+msgid "calendars"
+msgstr "تقویم"
+
+#: apps/schedule/models/calendars.py:227 apps/schedule/models/events.py:436
+#, fuzzy
+#| msgid "Administration"
+msgid "distinction"
+msgstr "مدیریت"
+
+#: apps/schedule/models/calendars.py:228
+#, fuzzy
+#| msgid "cartable"
+msgid "inheritable"
+msgstr "در دست مشاور"
+
+#: apps/schedule/models/calendars.py:233
+msgid "calendar relation"
+msgstr ""
+
+#: apps/schedule/models/calendars.py:234
+msgid "calendar relations"
+msgstr ""
+
+#: apps/schedule/models/events.py:56 apps/schedule/models/events.py:455
+msgid "start"
+msgstr "شروع تاریخ"
+
+#: apps/schedule/models/events.py:57 apps/schedule/models/events.py:456
+msgid "end"
+msgstr "پایان"
+
+#: apps/schedule/models/events.py:58
+msgid "The end time must be later than the start time."
+msgstr ""
+
+#: apps/schedule/models/events.py:61 apps/schedule/models/events.py:454
+#: apps/schedule/models/rules.py:53
+msgid "description"
+msgstr "توضیحات"
+
+#: apps/schedule/models/events.py:65
+msgid "user"
+msgstr "کاربر"
+
+#: apps/schedule/models/events.py:68 apps/schedule/models/events.py:460
+msgid "created on"
+msgstr "ایجاد شده"
+
+#: apps/schedule/models/events.py:69 apps/schedule/models/events.py:461
+msgid "updated on"
+msgstr "بروزسانی در"
+
+#: apps/schedule/models/events.py:75 apps/schedule/models/rules.py:66
+msgid "rule"
+msgstr "تکرار"
+
+#: apps/schedule/models/events.py:76
+msgid "Select '----' for a one time only event."
+msgstr ""
+
+#: apps/schedule/models/events.py:77
+msgid "end recurring period"
+msgstr ""
+
+#: apps/schedule/models/events.py:78
+msgid "This date is ignored for one time only events."
+msgstr ""
+
+#: apps/schedule/models/events.py:86 apps/schedule/models/events.py:462
+msgid "Color event"
+msgstr "رنگ رخداد"
+
+#: apps/schedule/models/events.py:88
+msgid "By week day"
+msgstr ""
+
+#: apps/schedule/models/events.py:94 apps/schedule/models/events.py:432
+#: apps/schedule/models/events.py:450
+msgid "event"
+msgstr ""
+
+#: apps/schedule/models/events.py:95
+msgid "events"
+msgstr ""
+
+#: apps/schedule/models/events.py:102
+#, python-format
+msgid "%(title)s: %(start)s - %(end)s"
+msgstr ""
+
+#: apps/schedule/models/events.py:441
+#, fuzzy
+#| msgid "event datetime"
+msgid "event relation"
+msgstr "زمان رد"
+
+#: apps/schedule/models/events.py:442
+#, fuzzy
+#| msgid "event datetime"
+msgid "event relations"
+msgstr "زمان رد"
+
+#: apps/schedule/models/events.py:457
+msgid "cancelled"
+msgstr ""
+
+#: apps/schedule/models/events.py:458
+msgid "original start"
+msgstr ""
+
+#: apps/schedule/models/events.py:459
+msgid "original end"
+msgstr ""
+
+#: apps/schedule/models/events.py:465
+msgid "occurrence"
+msgstr ""
+
+#: apps/schedule/models/events.py:466
+msgid "occurrences"
+msgstr ""
+
+#: apps/schedule/models/events.py:552
+#, python-format
+msgid "%(start)s to %(end)s"
+msgstr ""
+
+#: apps/schedule/models/rules.py:14
+msgid "Yearly"
+msgstr ""
+
+#: apps/schedule/models/rules.py:15
+msgid "Monthly"
+msgstr ""
+
+#: apps/schedule/models/rules.py:16
+msgid "Weekly"
+msgstr ""
+
+#: apps/schedule/models/rules.py:17
+msgid "Daily"
+msgstr ""
+
+#: apps/schedule/models/rules.py:18
+msgid "Hourly"
+msgstr ""
+
+#: apps/schedule/models/rules.py:19
+msgid "Minutely"
+msgstr ""
+
+#: apps/schedule/models/rules.py:20
+msgid "Secondly"
+msgstr ""
+
+#: apps/schedule/models/rules.py:54
+msgid "frequency"
+msgstr ""
+
+#: apps/schedule/models/rules.py:55
+msgid "params"
+msgstr "پارامتر"
+
+#: apps/schedule/models/rules.py:67
+msgid "rules"
+msgstr ""
+
+#: apps/shop/admin.py:91 apps/shop/models.py:138
+msgid "Editor"
+msgstr "ویرایش کننده"
+
+#: apps/shop/apps.py:7
+msgid "Shop"
+msgstr "فروشگاه"
+
+#: apps/shop/models.py:20
+msgid "Percent"
+msgstr "درصدی"
+
+#: apps/shop/models.py:21
+msgid "Money"
+msgstr "پول"
+
+#: apps/shop/models.py:29
+#, fuzzy
+#| msgid "Entire time"
+msgid "Expire at"
+msgstr "زمان ورود"
+
+#: apps/shop/models.py:34 apps/shop/models.py:43 apps/shop/models.py:56
+#: apps/shop/models.py:146 apps/shop/models.py:354
+msgid "Coupon"
+msgstr "کوپن"
+
+#: apps/shop/models.py:35
+msgid "Coupons"
+msgstr "کوپن ها"
+
+#: apps/shop/models.py:44
+#, fuzzy
+#| msgid "Students"
+msgid "Number Of Students"
+msgstr "دانش آموزها"
+
+#: apps/shop/models.py:47
+#, fuzzy
+#| msgid "Coupon"
+msgid "Coupon Code"
+msgstr "کوپن"
+
+#: apps/shop/models.py:48
+#, fuzzy
+#| msgid "Coupons"
+msgid "Coupons Code"
+msgstr "کوپن ها"
+
+#: apps/shop/models.py:52
+msgid "Name"
+msgstr ""
+
+#: apps/shop/models.py:54
+msgid "Parent"
+msgstr "والد"
+
+#: apps/shop/models.py:66
+msgid "Categories"
+msgstr "شاخه ها"
+
+#: apps/shop/models.py:76 apps/shop/models.py:77
+msgid "Sample Forms Group"
+msgstr "گروه فرم های نمونه"
+
+#: apps/shop/models.py:91
+msgid "Sample Form Group"
+msgstr "گروه فرم های نمونه"
+
+#: apps/shop/models.py:93
+#, fuzzy
+#| msgid "event datetime"
+msgid "Presentation"
+msgstr "زمان رد"
+
+#: apps/shop/models.py:94
+msgid "Is Required"
+msgstr ""
+
+#: apps/shop/models.py:105 apps/shop/models.py:106 apps/shop/models.py:378
+msgid "Sample Form Fields"
+msgstr "فیلد های فرم نمونه"
+
+#: apps/shop/models.py:120 apps/shop/models.py:121
+msgid "Sample Forms"
+msgstr "فرم نمونه"
+
+#: apps/shop/models.py:140 apps/shop/models.py:349
+msgid "Price"
+msgstr "قیمت"
+
+#: apps/shop/models.py:141 apps/shop/models.py:350
+msgid "Has Discount"
+msgstr "تحفیف دارد؟"
+
+#: apps/shop/models.py:142 apps/shop/models.py:351
+#, fuzzy
+#| msgid "Has Discount"
+msgid "Discount"
+msgstr "تحفیف دارد؟"
+
+#: apps/shop/models.py:143 apps/shop/models.py:352
+msgid "Is Free"
+msgstr ""
+
+#: apps/shop/models.py:144
+msgid "Deleted"
+msgstr "حذف شده"
+
+#: apps/shop/models.py:147 apps/shop/models.py:355
+msgid "Sample Form"
+msgstr "فرم نمونه"
+
+#: apps/shop/models.py:149
+msgid "Published"
+msgstr ""
+
+#: apps/shop/models.py:161
+msgid "Link Buy Direct"
+msgstr ""
+
+#: apps/shop/models.py:162
+#, fuzzy
+#| msgid "Field Name"
+msgid "Seller Name"
+msgstr "نام فیلد"
+
+#: apps/shop/models.py:163
+msgid "Digital"
+msgstr ""
+
+#: apps/shop/models.py:164
+#, fuzzy
+#| msgid "Student"
+msgid "For Student"
+msgstr "دانش آموز"
+
+#: apps/shop/models.py:165
+msgid "For Teacher"
+msgstr ""
+
+#: apps/shop/models.py:183 apps/shop/models.py:196 apps/shop/models.py:224
+#: apps/shop/models.py:252 apps/shop/models.py:276 apps/shop/models.py:319
+#: apps/shop/models.py:343 apps/shop/models.py:377
+msgid "Product"
+msgstr "محصول"
+
+#: apps/shop/models.py:184
+msgid "Products"
+msgstr "محصولات"
+
+#: apps/shop/models.py:200
+msgid "Product Image"
+msgstr "عکس های محصول"
+
+#: apps/shop/models.py:201
+msgid "Product Images"
+msgstr "عکس های محصولات"
+
+#: apps/shop/models.py:231
+msgid "File Product"
+msgstr "فایل های محصول"
+
+#: apps/shop/models.py:232
+msgid "File Products"
+msgstr "فایل های محصول"
+
+#: apps/shop/models.py:277
+msgid "Sender"
+msgstr "ارسال کننده"
+
+#: apps/shop/models.py:289
+msgid "Product Comment"
+msgstr "دیدگاه محصول"
+
+#: apps/shop/models.py:290
+msgid "Product Comments"
+msgstr "دیدگاه محصول"
+
+#: apps/shop/models.py:297
+msgid "Product comment"
+msgstr "دیدگاه محصول"
+
+#: apps/shop/models.py:302
+#, fuzzy
+#| msgid "Param Activity Comment"
+msgid "Param Product Comment"
+msgstr "امتیاز هر کامنت"
+
+#: apps/shop/models.py:303
+#, fuzzy
+#| msgid "Param Activity Comments"
+msgid "Param Product Comments"
+msgstr "امتیاز هر کامنت"
+
+#: apps/shop/models.py:314
+#, fuzzy
+#| msgid "Sum Activity Param"
+msgid "Sum Product Param"
+msgstr "مجموع امتیازات پارامترهای فعالیت"
+
+#: apps/shop/models.py:315
+#, fuzzy
+#| msgid "Sum Activity Params"
+msgid "Sum Product Params"
+msgstr "مجموع امتیازات پارامترهای فعالیت"
+
+#: apps/shop/models.py:323 apps/shop/models.py:324
+msgid "Basket"
+msgstr "سبد"
+
+#: apps/shop/models.py:330
+msgid "paid"
+msgstr ""
+
+#: apps/shop/models.py:335 apps/shop/models.py:344
+msgid "Invoice"
+msgstr "رسید خرید"
+
+#: apps/shop/models.py:336
+msgid "Invoices"
+msgstr "رسید خرید"
+
+#: apps/shop/models.py:360 apps/shop/models.py:361
+msgid "Invoice Product"
+msgstr "صورتحساب محصول"
+
+#: apps/shop/models.py:385 apps/shop/models.py:386
+msgid "Product Sample Form Fields"
+msgstr "فیلدهای فرم نمونه محصول"
+
+#: apps/shop/models.py:400
+msgid "Link"
+msgstr "لینک"
+
+#: apps/shop/models.py:428
+msgid "Shop Slider"
+msgstr "اسلایدر فروشگاه"
+
+#: apps/shop/models.py:429
+msgid "Shop Sliders"
+msgstr "اسلایدر فروشگاه"
+
+#: apps/user/apps.py:7
+msgid "Users"
+msgstr "کاربرها"
+
+#: apps/user/forms.py:10 apps/user/forms.py:46 apps/user/forms.py:82
+msgid "Password"
+msgstr " گذر واژه"
+
+#: apps/user/forms.py:12 apps/user/forms.py:48 apps/user/forms.py:84
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user's "
+"password, but you can change the password using <a href=\"{}/password/"
+"\">this form</a>."
+msgstr ""
+
+#: apps/user/models/advisor.py:22
+#, fuzzy
+#| msgid "Advisor"
+msgid "Advisor Level"
+msgstr "مسولین سوالات"
+
+#: apps/user/models/advisor.py:23
+#, fuzzy
+#| msgid "Advisor"
+msgid "Advisor Levels"
+msgstr "مسولین سوالات"
+
+#: apps/user/models/base.py:13
+msgid "Last visit"
+msgstr "اخرین بازدید"
+
+#: apps/user/models/base.py:14
+msgid "User Is Test"
+msgstr ""
+
+#: apps/user/models/base.py:26 apps/user/models/base.py:27
+msgid "Base User"
+msgstr "کاربر"
+
+#: apps/user/models/teacher.py:32
+msgid "Coach Level"
+msgstr "سطح"
+
+#: apps/user/models/teacher.py:33
+msgid "Coach Levels"
+msgstr "سطوح"
+
+#: templates/admin/activity/activitycategory/change_form.html:13
+#: templates/admin/index.html:16
+#: templates/admin/league/school/change_list.html:107
+msgid "Home"
+msgstr "خانه"
+
+#: templates/admin/activity/activitycategory/change_form.html:15
+msgid "Add"
+msgstr "آدرس"
+
+#: templates/admin/activity/activitycategory/change_form.html:15
+msgid "Change"
+msgstr "تغییر دادن"
+
+#: templates/admin/activity/activitycategory/change_form.html:27
+msgid "New"
+msgstr "افزودن"
+
+#: templates/admin/activity/activitycategory/change_form.html:32
+msgid "Please correct the error below."
+msgstr "لطفا خطای زیر را تصحیح کنید."
+
+#: templates/admin/activity/activitycategory/change_form.html:32
+msgid "Please correct the errors below."
+msgstr "لطفا خطاهای زیر را تصحیح کنید."
+
+#: templates/admin/activity/activitycategory/change_form.html:57
+msgid "Tools"
+msgstr "ابزارها"
+
+#: templates/admin/activity/activitycategory/change_form.html:61
+msgid "History"
+msgstr "تاریخچه"
+
+#: templates/admin/activity/activitycategory/change_form.html:65
+msgid "View on site"
+msgstr "مشاهد سایت"
+
+#: templates/admin/base.html:63
+msgid "Dashboard"
+msgstr "داشبورد"
+
+#: templates/admin/base.html:68
+msgid "View site"
+msgstr "مشاهد سایت"
+
+#: templates/admin/base.html:104
+msgid "Administration"
+msgstr "مدیریت"
+
+#: templates/admin/base.html:112
+msgid "Documentation"
+msgstr "مستندات"
+
+#: templates/admin/base.html:117
+msgid "Change password"
+msgstr "تغییر گذر واژه"
+
+#: templates/admin/base.html:121
+msgid "Log out"
+msgstr "خروج"
+
+#: templates/admin/base.html:124
+msgid "Log in"
+msgstr "ورود"
+
+#: templates/admin/filter.html:3 templates/admin/filter.html:4
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: templates/admin/league/school/change_list.html:135
+msgid "Filter"
+msgstr ""
+
+#: templates/material/admin/edit_inline/stacked.html:63
+msgid "Delete"
+msgstr "پاک کردن"
+
+#: templates/material/fields/django_admindatewidget.html:21
+#: templates/material/fields/django_adminsplitdatetime.html:50
+msgid "Today"
+msgstr "امروز"
+
+#: templates/material/fields/django_admintimewidget.html:21
+msgid "Now"
+msgstr "هم اکنون"
+
+#: templates/material/fields/django_relatedfieldwidgetwrapper.html:14
+#, python-format
+msgid "Change selected %(bound_field_urls.model)s"
+msgstr "%(bound_field_urls.model)s ویرایش"
+
+#: templates/material/fields/django_relatedfieldwidgetwrapper.html:22
+#, python-format
+msgid "Add another %(bound_field_urls.model)s"
+msgstr "افزودن %(bound_field_urls.model)s"
+
+#: templates/material/fields/django_relatedfieldwidgetwrapper.html:30
+#, python-format
+msgid "Delete selected %(bound_field_urls.model)s"
+msgstr "حذف %(bound_field_urls.model)s"
+
+#~ msgid "Get_student_name"
+#~ msgstr "مسؤل انجمن"
+
+#~ msgid "Accepted Activity"
+#~ msgstr "فعالیت تایید شده"
+
+#~ msgid "Accepted Activities"
+#~ msgstr "فعالیت های تایید شده"
+
+#~ msgid "School Department"
+#~ msgstr "امتیاز هر محور با مدرسه"
+
+#~ msgid "School Departments"
+#~ msgstr "امتیازهای هر محور با مدرسه"
+
+#, fuzzy
+#~| msgid "activity"
+#~ msgid "active"
+#~ msgstr "فعالیت"

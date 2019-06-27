@@ -1,0 +1,194 @@
+﻿@import url(fontiran.css);
+
+*{
+    font-family: IRANSans !important;
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.material-icons {
+    font-family: 'Material Icons' !important;
+}
+
+.right{
+    float: left !important;
+}
+
+.left{
+    float:right !important;
+}
+
+.caret {
+    right: auto !important;
+    left: 0 !important;
+}
+
+.fixed-action-btn {
+    right: auto !important;
+    left: 23px !important;
+}
+
+nav.breadcrumbs a:not(:first-child)::before {
+    content: "\E5CB";
+}
+
+ul{
+    padding-right: 0;
+}
+
+i.left {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.right-align {
+    text-align: left !important;
+}
+
+.btn,
+.btn-large,
+.registration .logo,
+.btn-floating i {
+    text-align: center !important;
+}
+
+nav .button-collapse {
+    float: right;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    margin-left: 24px;
+    margin-right: 0px;
+
+}
+
+.side-nav li > a > [class^="mdi-"],
+.side-nav li > a > i,
+.side-nav li > a > i.material-icons,
+.side-nav li > a li > a > [class*="mdi-"] {
+    float: right;
+    margin: 0 0 0 32px;
+}
+
+.side-nav.fixed .collapsible-body li a {
+    padding-right: 70px;
+    padding-left: 0;
+}
+.side-nav.fixed {
+    left: auto;
+    right: 0;
+}
+
+.left-panel {
+    margin-right: .375rem;
+    margin-left: 0;
+}
+
+.input-field .prefix~.autocomplete-content,
+.input-field .prefix~.validate~label,
+.input-field .prefix~input,
+.input-field .prefix~label,
+.input-field .prefix~textarea {
+    margin-left: 0;
+    margin-right: 3rem;
+}
+
+@media only screen and (min-width: 993px) {
+    nav {
+        padding-right: 40px;
+    }
+    footer, main {
+        margin-left: 0;
+        margin-right: 300px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    nav.breadcrumbs {
+        padding-right: 20px;
+    }
+    .side-nav.fixed {
+        transform: translateX(105%);
+    }
+}
+
+nav ul li {
+    float: right;
+}
+
+.app-list .app .card .app-item a {
+    text-align: center !important;
+}
+
+.app-list .app .card .app-item a h6 {
+    text-align: center !important;
+}
+
+.row .col {
+    float: right;
+}
+
+[type=checkbox]:checked, [type=checkbox]:not(:checked) {
+    left: 9999px;
+}
+
+.filters-card #changelist-search-button {
+    left: 15px;
+    right: auto;
+}
+
+.filled-in[type="checkbox"] + label::after, .filled-in[type="checkbox"] + label::before {
+    right: 0;
+    left:auto;
+    transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+}
+
+/*[type="checkbox"] + label {*/
+    /*padding-right: 35px;*/
+    /*padding-left: auto;*/
+/*}*/
+
+.filled-in[type="checkbox"]:checked + label::before {
+    right: 10px;
+    left: auto;
+}
+
+.results table tr .action-checkbox {
+    width: 50px;
+    text-align: left !important;
+}
+
+.card-stats .card-stats-number {
+    font-size: 1.8rem;
+    line-height: 2.0rem;
+    margin: 0.2rem 0 0.2rem 0;
+    font-weight: 500;
+}
+
+.card-stats .card-content {
+    text-align: center;
+}
+
+[type="checkbox"] + label {
+    padding-right: 35px;
+    padding-left: inherit;
+}
+
+#toast-container {
+    top: 10%;
+    right: auto;
+    left: 7%;
+    max-width: 86%;
+}
+
+[type="checkbox"] + label::before, [type="checkbox"]:not(.filled-in) + label::after {
+    left: auto;
+    right: 0;
+}
+
+.collapsible-header i {
+    display: block;
+    float: right;
+    margin-left: 1rem;
+    margin-right: 0;
+}

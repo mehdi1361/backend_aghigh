@@ -1,0 +1,4 @@
+Instructions:
+cp VARS.sample VARS
+vim VARS
+./init

@@ -1,0 +1,119 @@
+.bd-hide {
+	display: block;
+}
+
+.bd-main {
+	background-color: #FFF;
+	padding: 5px;
+	z-index: 9999;
+	width: auto !important;
+	margin: 0;
+	position: relative !important;
+}
+
+.bd-calendar {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.bd-title {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.bd-calendar table {
+	border: none;
+	width: 100%
+}
+
+.bd-dropdown {
+	display: inline-block;
+	float: right;
+	width: 30%
+}
+
+.bd-dropdown select {
+	width: 30%;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.bd-next, .bd-prev {
+	cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #FFF;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    float: right;
+    line-height: 50px;
+    text-align: center !important;
+}
+
+.bd-table thead {
+	color: #000;
+}
+
+.bd-table thead tr {
+	height: 30px;
+	cursor: context-menu;
+}
+
+.bd-table thead tr th {
+	text-align: center !important;
+}
+
+.bd-table tbody tr td {
+	border: none;
+	text-align: center !important;
+}
+
+.bd-empty-cell {
+	width: 14.286%;
+	height: 30px;
+}
+
+.bd-table-days button {
+	width: 14.286%;
+	height: 30px;
+	cursor: pointer;
+	background-color: #FFF;
+	border: 0;
+	text-align: center !important;
+}
+
+.bd-table-days button:hover {
+	color: red;
+	font-weight: bold;
+	background-color: #E7E7E7;
+}
+
+.bd-today {
+	background-color: #DFF0D8 !important;
+	color: green;
+}
+
+.bd-holiday {
+    background-color: #FDE8E8 !important;
+}
+
+.bd-selected-day {
+	color: red;
+	font-weight: bold;
+}
+
+.bd-goto-today {
+	width: 100%;
+	height: 30px;
+	color: #FFF;
+	background-color: #555555;
+	padding-top: 5px;
+	cursor: pointer;
+	text-align: center;
+}

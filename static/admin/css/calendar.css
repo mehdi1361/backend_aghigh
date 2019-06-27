@@ -1,0 +1,81 @@
+#navigator {
+    margin: 0px auto 0;
+    width: 100%;
+}
+#arrowleft a {
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: x-large;
+	color: #ABABAB;
+	text-decoration: none;
+}
+#arrowleft a:hover {
+	display:block;
+	text-align: center;
+	font-size: x-large;
+	color: #000000;
+}
+#arrowright a {
+	display: block;
+	float: right;
+	text-align: center;
+	font-size: x-large;
+	color: #ABABAB;
+	text-decoration: none;
+}
+#arrowright a:hover {
+	display: block;
+	text-align: center;
+	font-size: x-large;
+	color: #000000;
+}
+#monthname {
+	margin: 0 auto;
+	text-align: center !important;
+	font-size: x-large;
+	color: #808080;
+}
+#daynameblock {
+    margin: 5px auto 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    padding: 15px 0;
+}
+.dayname, .weekendname{
+	width: 14.286%;
+	display: block;
+	float: right;
+	text-align: center !important;
+	font-size: large;
+	color: #4E96DA;
+}
+.weekendname {
+	color: #FF754B;
+}
+#daysblock {
+	width: 100%;
+	display: block;
+	background-color: #4E96DA;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.weekdays a, .weekend a {
+    padding: 15px 0;
+    width: 14.286%;
+    display: block;
+    float: right;
+    text-align: center !important;
+    font-size: large;
+    color: #FFFFFF;
+    background-color: #4E96DA;
+    text-decoration: none;
+}
+.weekend a {
+	background-color: #5EA5E8;
+}
+.weekdays a:hover, .weekend a:hover {
+    color: #000;
+	background: #fff;
+}

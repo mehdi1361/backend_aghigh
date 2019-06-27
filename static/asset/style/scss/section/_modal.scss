@@ -1,0 +1,35 @@
+.modal{
+  .modal-content{
+    @include set_radius(3px);
+    @include set_webkit(box-shadow, 0 2px 5px rgba(0, 0, 0, 0.2));
+  }
+
+  .modal-header{
+    padding: 25px 30px;
+    border-bottom: none;
+    .modal-title{
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 1;
+    }
+  }
+  .modal-footer{
+    padding: 25px 0;
+    margin: 0 30px;
+    border-top:solid 2px $header_orange;
+    &.no-border{
+      border-top:none;
+    }
+  }
+
+
+  .modal-body{
+    padding: 0 30px;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+.ac1, .ac3, .ac2, .ac4
+{ display: inline-block; background: url('../image/activity.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.ac1 { background-position: -0px -0px; width: 97px; height: 87px; }
+.ac3 { background-position: -0px -87px; width: 88px; height: 87px; }
+.ac2 { background-position: -0px -174px; width: 84px; height: 84px; }
+.ac4 { background-position: -0px -258px; width: 73px; height: 74px; }

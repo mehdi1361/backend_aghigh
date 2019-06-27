@@ -1,0 +1,37 @@
+info:
+  description: "Camp api response"
+  #
+  # pagination information
+  #
+  required:
+    - "count"
+    - "per_page"
+    - "next_page"
+    - "prev_page"
+    - "camps"
+  properties:
+    count:
+      type: "number"
+    per_page:
+      type: "number"
+    next_page:
+      type: "number"
+    prev_page:
+      type: "number"
+    camps:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          bagheri_id:
+            type: "number"
+          name:
+            type: "string"
+          county_id:
+            type: "number"
+          #
+          # if camp hasn't a teacher ,teacher id of
+          # a higher level should be returned
+          #
+          teacher_id:
+            type: "number"

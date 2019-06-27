@@ -1,0 +1,26 @@
+{
+  "count": 2000,
+  "per_page": 100,
+  "next_page": 2,
+  "prev_page": 1,
+  "schools": [
+    {
+      "bagheri_id": 1,
+      "name": "نام فارسی مدرسه",
+      "gender": "female|male",
+      "camp_id": 1,
+      "teacher_id": 1,
+      "number_of_students": 1,
+      "number_of_users": 1
+    },
+    {
+      "bagheri_id": 1,
+      "name": "نام فارسی مدرسه",
+      "gender": "female|male",
+      "camp_id": 1,
+      "teacher_id": 1,
+      "number_of_students": 1,
+      "number_of_users": 1
+    }
+  ]
+}

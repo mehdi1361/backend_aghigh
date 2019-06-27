@@ -1,0 +1,16 @@
+.alert{
+  border:none;
+  @include set_radius(0);
+  font-size: 17px;
+  line-height: 30px;
+  padding: 10px 15px;
+
+  &.alert-success{
+    background: $btn_green_light;
+    color: $btn_green;
+    border-right: solid 5px $btn_green;
+  }
+}
+
+
+

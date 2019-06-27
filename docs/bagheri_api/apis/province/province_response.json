@@ -1,0 +1,40 @@
+{
+  "count": 2000,
+  "per_page": 100,
+  "next_page": 2,
+  "prev_page": 1,
+  "provinces": [
+    {
+      "bagheri_id": 1,
+      "name": "چهار محال و بختیاری",
+      "en_name": "chahar-mahal-va-bakhtiari",
+      "teacher_id": 1,
+      "teacher_id_f": 1,
+      "teacher_id_m": 1
+    },
+    {
+      "bagheri_id": 2,
+      "name": "قم",
+      "en_name": "Qom",
+      "teacher_id": 2,
+      "teacher_id_f": 1,
+      "teacher_id_m": 1
+    },
+    {
+      "bagheri_id": 3,
+      "name": "مرکزی",
+      "en_name": "Markazi",
+      "teacher_id": 3,
+      "teacher_id_f": 1,
+      "teacher_id_m": 1
+    },
+    {
+      "bagheri_id": 4,
+      "name": "تهران",
+      "en_name": "Tehran",
+      "teacher_id": 4,
+      "teacher_id_f": 1,
+      "teacher_id_m": 1
+    }
+  ]
+}

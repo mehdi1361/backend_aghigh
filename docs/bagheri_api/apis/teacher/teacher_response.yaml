@@ -1,0 +1,57 @@
+info:
+  description: "Provinces api response"
+  #
+  # pagination information
+  #
+  required:
+    - "count"
+    - "per_page"
+    - "next_page"
+    - "prev_page"
+    - "teachers"
+  properties:
+    count:
+      type: "number"
+    per_page:
+      type: "number"
+    next_page:
+      type: "number"
+    prev_page:
+      type: "number"
+    teachers:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          bagheri_id:
+            type: "number"
+          #
+          # Student national id
+          #
+          username:
+            type: "string"
+          phone_number:
+            type: "string"
+          first_name:
+            type: "string"
+          last_name:
+            type: "string"
+          #
+          # can be female or male
+          #
+          gender:
+            type: "string"
+          email:
+            type: "string"
+          #
+          # levels of a teacher
+          # 1 => coach
+          # 2 => camp
+          # 3 => county
+          # 4 => province
+          # 5 => province_f
+          # 6 => province_m
+          # 7 => country
+          #
+          levels:
+            type: "list"

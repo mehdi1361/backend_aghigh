@@ -1,0 +1,40 @@
+{
+  "count": 2000,
+  "per_page": 100,
+  "next_page": 2,
+  "prev_page": 1,
+  "students": [
+    {
+      "first_name": "mo",
+      "last_name": "mi",
+      "phone_number": "09xxxxxxxxxx",
+      "gender": "female|male",
+      "username": "4621234569",
+      "bagheri_school_id": 1
+    },
+    {
+      "first_name": "mo",
+      "last_name": "mi",
+      "phone_number": "09xxxxxxxxxx",
+      "gender": "female|male",
+      "username": "4621234569",
+      "bagheri_school_id": 1
+    },
+    {
+      "first_name": "mo",
+      "last_name": "mi",
+      "phone_number": "09xxxxxxxxxx",
+      "gender": "female|male",
+      "username": "4621234569",
+      "bagheri_school_id": 1
+    },
+    {
+      "first_name": "mo",
+      "last_name": "mi",
+      "phone_number": "09xxxxxxxxxx",
+      "gender": "female|male",
+      "username": "4621234569",
+      "bagheri_school_id": 1
+    }
+  ]
+}

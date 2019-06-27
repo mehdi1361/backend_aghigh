@@ -1,0 +1,19 @@
+#!/bin/bash
+if test -e VARS; then
+. VARS
+else
+. VARS.sample
+fi
+BASE="`dirname $PWD`"
+LOGDIR=/var/log/$APP_NAME
+(
+ cd tmpl
+ for f in *; do
+ APP_NAME=$APP_NAME VENV=$VENV BASE=$BASE LOGDIR=$LOGDIR USERNAME=`whoami` envsubst < $f > ../$f
+ done
+)
+sudo ln -sf "$PWD"/nginx.conf /etc/nginx/sites-enabled/$APP_NAME.conf
+sudo ln -sf "$PWD"/supervisor.conf /etc/supervisor/conf.d/$APP_NAME.conf
+sudo mkdir -p $LOGDIR
+sudo service supervisor restart
+sudo service nginx restart

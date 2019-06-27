@@ -1,0 +1,181 @@
+@mixin set_webkit($property, $value , $forVal :false) {
+
+  @if $forVal{
+    -webkit-#{$property}: -webkit-#{$value};
+    -moz-#{$property}: -moz-#{$value};
+    -ms-#{$property}: -ms-#{$value};
+    -o-#{$property}: -o-#{$value};
+    #{$property}: #{$value};
+  }
+  @else {
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+  }
+}
+
+@mixin set_transition($property : all 0.4s,$set_webkit:false) {
+  @include set_webkit('transition',$property,$set_webkit);
+}
+
+@mixin set_transform($property) {
+  @include set_webkit('transform',$property);
+}
+
+@mixin set_vertical($align){
+  @include set_webkit(vertical-align,$align);
+}
+
+@mixin set_radius($val) {
+  @include set_webkit(border-radius,$val);
+}
+
+@mixin set_image_cover($size:cover,$position:center center) {
+  @include set_webkit('background-size',$size,false);
+  background-position: $position;
+  background-repeat: no-repeat;
+}
+
+@mixin set_text_overflow()
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin set_text_border($color) {
+  text-shadow: 2px 0 0 $color, -2px 0 0 $color, 0 2px 0 $color, 0 -2px 0 $color, 1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color;
+  -webkit-text-shadow: 2px 0 0 $color, -2px 0 0 $color, 0 2px 0 $color, 0 -2px 0 $color, 1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color;
+  -moz-text-shadow: 2px 0 0 $color, -2px 0 0 $color, 0 2px 0 $color, 0 -2px 0 $color, 1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color;
+  -o-text-shadow: 2px 0 0 $color, -2px 0 0 $color, 0 2px 0 $color, 0 -2px 0 $color, 1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color;
+  -ms-text-shadow: 2px 0 0 $color, -2px 0 0 $color, 0 2px 0 $color, 0 -2px 0 $color, 1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color;
+}
+
+@mixin link_hover_opacity($first:1,$last:0.7,$set_trans:all 0.3s) {
+  opacity: $first;
+  -webkit-backface-visibility: hidden;
+
+  @if $set_trans != ""{
+    @include set_transition($set_trans);
+  }
+
+
+  &:not([disabled="disabled"]){
+
+    cursor: pointer;
+
+    &:hover{
+      opacity: $last;
+    }
+  }
+}
+
+@mixin link_hover_color($first,$last:'dark',$property:color,$set_trans:all 0.4s ease) {
+  @if $last == "dark"{
+    $last:darken($first,30%);
+  }
+
+  @if $last == "light"{
+    $last:lighten($first,20%);
+  }
+
+  #{$property} : $first;
+
+  @if $set_trans != false{
+    @include set_transition($set_trans);
+  }
+
+  &:not([disabled="disabled"]):not(.loading){
+
+    cursor: pointer;
+
+    &:hover{
+      #{$property} : $last;
+    }
+  }
+
+  &:focus,&:active{
+    #{$property} : $last;
+  }
+
+  &[disabled="disabled"]{
+    cursor: default;
+  }
+
+  &.loading{
+    opacity: 0.7 !important;
+    cursor: wait !important;
+  }
+}
+
+@mixin link_hover_bg($first,$last:'dark',$set_trans:all 0.4s ease) {
+  @include link_hover_color($first,$last,background,$set_trans);
+}
+
+@mixin link_hover_color_both($first,$last:'dark',$set_trans:all 0.4s ease) {
+  @if $last == "dark"{
+    $last:darken($first,10%);
+  }
+
+
+  @if $last == "light"{
+    $last:lighten($first,20%);
+  }
+
+  color : $first;
+  background : $first;
+
+  @if $set_trans != false{
+    @include set_transition($set_trans);
+  }
+
+  &:not([disabled="disabled"]):not(.loading){
+
+    cursor: pointer;
+
+    &:hover{
+      color : $last;
+      background : $last;
+    }
+  }
+
+  &.loading{
+    opacity: 0.7 !important;
+    cursor: wait !important;
+  }
+}
+
+
+@mixin displayTable($width:100){
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+
+  &:after{
+    clear: both;
+  }
+}
+
+@mixin parent_child_center() {
+  /* display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;*/
+  display: table;
+  @include set_webkit(vertical-align,middle);
+  >*{
+    display: table-cell !important;
+    width: 100%;
+    @include set_webkit(vertical-align,middle);
+  }
+}
+

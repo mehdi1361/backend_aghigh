@@ -1,0 +1,46 @@
+info:
+  description: "School api response"
+  #
+  # pagination information
+  #
+  required: 
+    - "count"
+    - "per_page"
+    - "next_page"
+    - "prev_page"
+    - "schools"
+  properties: 
+    count: 
+      type: "number"
+    per_page: 
+      type: "number"
+    next_page: 
+      type: "number"
+    prev_page: 
+      type: "number"
+    schools: 
+      type: "array"
+      items: 
+        type: "object"
+        properties: 
+          bagheri_id: 
+            type: "number"
+          name: 
+            type: "string"
+          #
+          # can be female or male
+          #
+          gender: 
+            type: "string"
+          camp_id: 
+            type: "number"
+          #
+          # if school hasn't a teacher ,teacher id of
+          # a higher level should be returned
+          #
+          teacher_id: 
+            type: "number"
+          number_of_students: 
+            type: "number"
+          number_of_users: 
+            type: "number"

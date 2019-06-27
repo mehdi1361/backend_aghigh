@@ -1,0 +1,214 @@
+//////////////////////////////////////////////////////////////////////// header
+header{
+  background-color: $header_blue;
+  background-image: url(../image/star.png);
+  background-repeat: repeat;
+  background-position: left bottom;
+  position: relative;
+  overflow: hidden;
+
+  &:after{
+    position: absolute;
+    bottom: 0;
+    height: $wave_height;
+    left: 0;
+    width: 100%;
+    background-image: url(../image/header.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    content: '';
+    display: block;
+    z-index: 2;
+  }
+
+  >div{
+    display: table;
+    width: 100%;
+
+    .container{
+      background: -moz-linear-gradient(left, rgba(108,76,203,0) 0%, rgba(108,76,203,0.9) 100%);
+      background: -webkit-linear-gradient(left, rgba(108,76,203,0) 0%,rgba(108,76,203,0.9) 100%);
+      background: linear-gradient(to right, rgba(108,76,203,0) 0%,rgba(108,76,203,0.9) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006c4ccb', endColorstr='#6c4ccb',GradientType=1 );
+    }
+
+    >div{
+      display: table-cell;
+
+      &.aside{
+        &:first-child{
+          background: $header_blue;
+        }
+      }
+    }
+  }
+
+  .content{
+    position: relative;
+    z-index: 1;
+    .top{
+      margin-bottom: 35px;
+    }
+  }
+
+
+
+  .container{
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: $wave_height + 10px;
+  }
+
+
+
+  .navigation{
+    display: table;
+    width: 100%;
+    >*{
+      float: right;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// banner
+.header-banner{
+  display: block;
+  width: 190px;
+  height: 95px;
+  position: relative;
+  z-index: 1;
+
+
+  >div{
+    position: absolute;
+    top:20px;
+    right: 0;
+    width: 190px;
+    height: 190px;
+    @include set_radius(50%);
+    text-align: center;
+    img{
+      margin: 0 auto;
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+    }
+
+
+    &:after{
+      position: absolute;
+      bottom: 154px;
+      right: 58px;
+      width: 190px;
+      content: '';
+      height: 250px;
+      @include set_radius(0 0 190px 190px);
+      @include set_webkit(transform-origin, bottom);
+      @include set_transform(rotateZ(135deg));
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%);
+      background: linear-gradient(to top, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000',GradientType=1 );
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// responsive
+@media (max-width: 992px) {
+  .header-banner{
+    position: fixed;
+    top:-10000px;
+  }
+}
+
+@media (max-width: 850px) {
+  header{
+
+    .container{
+      padding-bottom: $wave_height - 20;
+    }
+
+
+
+    .content{
+      width: 100%;
+      display: table;
+      padding: 0 15px;
+
+
+      .top{
+        float: right;
+        margin-bottom: 0;
+      }
+      .navigation{
+        float: left;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  header .content .top{
+    width: 80%;
+    padding-top: 12px;
+
+    a{
+      display: block;
+      img{
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

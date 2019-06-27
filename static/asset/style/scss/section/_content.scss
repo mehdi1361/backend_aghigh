@@ -1,0 +1,134 @@
+//////////////////////////////////////////////////////////////////////// content
+#content{
+  position: relative;
+  z-index: 2;
+}
+
+//////////////////////////////////////////////////////////////////////// title
+.section-title{
+  display: table;
+  width: 100%;
+
+
+
+  .title{
+    float: right;
+    margin-bottom:20px !important;
+  }
+
+  .btn{
+    float: left;
+    margin-right:5px;
+    margin-bottom:20px !important;
+  }
+
+
+  &.style-1{
+
+    .title{
+      color: $header_blue;
+      font-size: 20px;
+      margin: 0;
+      display: table;
+      line-height: 25px;
+      i{
+        margin-left:12px;
+        font-size: 25px;
+        float: right;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// text
+.text-p{
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+}
+.text-gray{
+  color: $activity_gray;
+}
+
+
+.text-green{
+  color: $activity_green;
+}
+.product-text{
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  color: $activity_gray_darker;
+
+  >*{
+    margin-bottom:30px;
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
+
+  ul{
+    padding-right: 15px;
+  }
+}
+
+
+//////////////////////////////////////////////////////////////////////// image loader
+.image_loader{
+  background: $activity_gray_lighter;
+  .image_set{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    @include set_transition();
+    @include set_image_cover();
+    &+img{
+      display: none;
+    }
+  }
+
+
+  img{
+    opacity: 0;
+    @include set_transition();
+  }
+  &.load{
+    img{  opacity:1;}
+    .image_set{  opacity:1;}
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// shopping price
+.shopping-price{
+   @include set_radius(3px);
+   overflow: hidden;
+  border:solid thin $activity_green;
+  >div{
+    line-height: 60px;
+    padding: 0 15px;
+
+    span{
+      &:first-child{ font-size: 17px }
+      &.price{ font-size: 20px }
+    }
+
+    &:nth-child(2n + 1){ color:$activity_green; }
+    &:nth-child(2n){ background: $activity_green; color: white; }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////// product
+.product-detail{
+  padding-top: 15px;
+  padding-right: 30px;
+  .title{
+    margin-top:0;
+    color: $activity_gray_darker;
+    font-size: 20px;
+  }
+}
+
+
+
+

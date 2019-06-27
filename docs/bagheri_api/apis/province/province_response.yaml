@@ -1,0 +1,44 @@
+info:
+  description: "Provinces api response"
+  #
+  # pagination information
+  #
+  required:
+    - "count"
+    - "per_page"
+    - "next_page"
+    - "prev_page"
+    - "provinces"
+  properties:
+    count:
+      type: "number"
+    per_page:
+      type: "number"
+    next_page:
+      type: "number"
+    prev_page:
+      type: "number"
+    provinces:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          bagheri_id:
+            type: "number"
+          name:
+            type: "string"
+          en_name:
+            type: "string"
+          #
+          # if province hasn't a teacher ,teacher id of
+          # a higher level should be returned
+          #
+          teacher_id:
+            type: "number"
+
+          teacher_id_f:
+            type: "number"
+
+          teacher_id_m:
+            type: "number"
+

@@ -1,0 +1,64 @@
+{% extends "admin/base_site.html" %}
+{% load activity_extras %}
+{% load common_extras %}
+{% load notif_extras %}
+{% load i18n admin_static material_admin %}
+{% block extrahead %}
+    {% load activity_extras %}
+
+    <link href="{% static 'admin/css/calendar.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'amcharts/plugins/export/export.css' %}" type="text/css" media="all"/>
+
+
+{% endblock %}
+
+{% block breadcrumbs_items %}
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+{% endblock %}
+
+{% block content %}
+    <div class="row card-stats">
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content green white-text">
+                    <span class="card-title">تعداد کل فعالیت ها</span>
+                    <h4 class="card-stats-number">{{ "value"|get_activity_count }}</h4>
+                    <p></p>
+                </div>
+                <div class="card-action green darken-2">
+                    <a href="{% url "admin:activity_activity_changelist" %}">مشاهده</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content green darken-2 white-text">
+                    <span class="card-title">تعداد مربی ها</span>
+                    <h4 class="card-stats-number">{{ "value"|get_coach_count }}</h4>
+                    <p></p>
+                </div>
+                <div class="card-action green darken-4">
+                    <a href="{% url "admin:user_teacher_changelist" %}">مشاهده</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content pink lighten-1 white-text">
+                    <span class="card-title">تعداد دانش آموزان</span>
+                    <h4 class="card-stats-number">{{ "value"|get_student_count }}</h4>
+                    <p></p>
+                </div>
+                <div class="card-action pink darken-2">
+                    <a href="{% url "admin:user_student_changelist" %}">مشاهده</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+{% block extrajs %}
+{% endblock %}
