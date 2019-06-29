@@ -232,3 +232,9 @@ CACHE_TIME_ANN_COUNT = 6 * 60 * 60  # زمان کش تعداد اطلاعیه  6
 CACHE_TIME_NOTIF_COUNT = 6 * 60 * 60  # زمان کش تعداد اعلانات  6 ساعت
 CACHE_TIME_APK_RELEASE = 1 * 60 * 60  # زمان کش گرفتن آدرس اپ  6 ساعت
 CONFIRM_CODE_USER_TEST = 55555
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(hours=200),
+    'JWT_ALLOW_REFRESH': True,
+    'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(hours=200),
+}
