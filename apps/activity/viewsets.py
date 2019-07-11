@@ -223,7 +223,7 @@ class ActivityViewSet(BaseViewSet):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-        Activity.objects.filter(id=pk).update(state=state_activity)
+        Activity.objects.filter(id=pk).delete()
 
         return Response(
             status=status.HTTP_200_OK,

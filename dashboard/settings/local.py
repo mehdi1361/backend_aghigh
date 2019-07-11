@@ -7,8 +7,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'aghigh_backend',
-        'USER': 'agu6756v',
-        'PASSWORD': 'dfsdfdf#$$^^#QsAD$KxsBgVdzPAU=565kzWG3mVsW',
+        'USER': 'postgres',
+        'PASSWORD': '13610522',
         'HOST': 'localhost',
         'PORT': '',
         'CONN_MAX_AGE': 60,
@@ -16,14 +16,14 @@ DATABASES = {
         #     'MAX_CONNS': 100
         # }
     },
-    '96_97': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aghigh_backend_96_97',
-        'USER': 'agu6756v',
-        'PASSWORD': 'dfsdfdf#$$^^#QsAD$KxsBgVdzPAU=565kzWG3mVsW',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
+    # '96_97': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'aghigh_backend_96_97',
+    #     'USER': 'agu6756v',
+    #     'PASSWORD': 'dfsdfdf#$$^^#QsAD$KxsBgVdzPAU=565kzWG3mVsW',
+    #     'HOST': 'localhost',
+    #     'PORT': '',
+    # }
 }
 
 MONGO = {
