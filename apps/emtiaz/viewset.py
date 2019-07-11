@@ -287,7 +287,7 @@ class EmtiazViewSet(BaseViewSet):
         _dict = {
             "id": 3,
             "order": 'point_high',
-            "title": "پرامتیاز ترین ها",
+            "title": " پرامتیازترین های 7 روز گذشته",
             "activities": self.get_serializer(activities, many=True).data,
             "category": 0
         }
