@@ -7,9 +7,9 @@ ALLOWED_HOSTS = ["127.0.0.1", "37.59.208.99"]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aghigh_backend',
-        'USER': 'agu6756v',
-        'PASSWORD': 'dfsdfdf#$$^^#QsAD$KxsBgVdzPAU=565kzWG3mVsW',
+        'NAME': 'ag_backend',
+        'USER': 'postgres',
+        'PASSWORD': '13610522',
         'HOST': 'localhost',
         'PORT': '',
         'CONN_MAX_AGE': 60,
