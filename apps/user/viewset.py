@@ -1,6 +1,8 @@
 import datetime
 import hashlib
 import threading
+
+from django.db.models import ExpressionWrapper, F, fields
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
@@ -11,13 +13,18 @@ from rest_framework.response import Response
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
+
+from apps.common.viewsets import BaseViewSetReadOnly
 from apps.user.models.student import ActivationBySmsCode
 from dashboard.logger import logger_api
 from utils.user_type import get_user_type, get_user_level, get_user_location
 from utils.sms import create_activation_code, is_activation_code_valid
 from apps.user.models.base import BaseUser
-from apps.user.serializers import BaseSerializer, StudentSerializer
+from apps.user.serializers import BaseSerializer, StudentSerializer, UserSessionSerializer
 from apps.bagheri_api.views import BagheriApi
+from .models.base import UserSession
+from datetime import timedelta, datetime
+from rest_framework.response import Response
 
 
 def baghery_encode(data):
@@ -286,3 +293,15 @@ def change_image(request):
 
     except:
         return JsonResponse(data={}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserActiveViewSet(BaseViewSetReadOnly):
+    queryset = UserSession.objects.all()
+    serializer_class = UserSessionSerializer
+
+    def list(self, request, *args, **kwargs):
+        duration = ExpressionWrapper(datetime.now() - F('updated_date'), output_field=fields.DurationField())
+        users = UserSession.objects.annotate(duration=duration).filter(duration__lt=timedelta(seconds=600))
+        serializers = self.serializer_class(users, many=True)
+
+        return Response(serializers.data)

@@ -47,3 +47,35 @@ class BaseUser(DjangoUser, TimeStampedModel):
 
     last_login_persian_date.admin_order_field = 'last_login'
 
+
+class UserSession(models.Model):
+    user_name = models.CharField(_('user'), unique=True, max_length=200)
+    name = models.CharField(_('name'), max_length=200, null=True)
+    role = models.CharField(_('role'), max_length=50, null=True)
+    created_date = models.DateTimeField(_('created date'), auto_now_add=True)
+    updated_date = models.DateTimeField(_('updated date'), null=True, blank=True)
+    last_login_date = models.DateTimeField(_('last login date'), null=True, blank=True)
+
+    def __str__(self):
+        return "{}".format(self.user_name)
+
+    class Meta:
+        db_table = "user_session"
+        verbose_name = _('user_session')
+
+    def save(self, force_insert=False, force_update=False, using=None,
+             update_fields=None):
+        from utils.user_type import get_user_type
+
+        base_user = BaseUser.objects.filter(
+            is_active=True,
+            username=self.user_name,
+        )
+        user = base_user.get()
+        self.role = get_user_type(user)
+        self.name = "{} {}".format(user.first_name, user.last_name)
+        super(UserSession, self).save()
+
+        @property
+        def active(self):
+            return

@@ -6,7 +6,4 @@ media
 celerybeat*
 logs
 backup
-**/migrations/**
-!**/migrations
-!**/migrations/__init__.py
 static/DisableManager.json

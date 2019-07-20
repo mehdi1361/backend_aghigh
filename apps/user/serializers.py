@@ -1,8 +1,9 @@
 from rest_framework import serializers
 from apps.league import models
 from apps.user.models import student
-from apps.user.models.base import BaseUser
+from apps.user.models.base import BaseUser, UserSession
 from apps.user.models.teacher import Teacher
+from datetime import datetime, timedelta
 
 
 class SchoolSerializer(serializers.ModelSerializer):
@@ -71,3 +72,22 @@ class BaseSerializer(serializers.ModelSerializer):
             'email',
             'image',
         )
+
+
+class UserSessionSerializer(serializers.ModelSerializer):
+    state = serializers.SerializerMethodField()
+
+    class Meta:
+        model = UserSession
+        fields = (
+            'user_name',
+            'name',
+            'role',
+            'created_date',
+            'updated_date',
+            'last_login_date',
+            'state',
+        )
+
+    def get_state(self, obj):
+        return datetime.now() - obj.updated_date < timedelta(seconds=600)
