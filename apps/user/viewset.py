@@ -234,7 +234,7 @@ def check_code(request):
                     user_data["image"] = ""
 
             if not as_user_login:  # اگر در حالت به عنوان یوزر وارد نشده بودیم تاریخ آخرین ورود ذخیره شود
-                user.last_login = datetime.datetime.now()
+                user.last_login = datetime.now()
                 user.save()
 
             return JsonResponse({

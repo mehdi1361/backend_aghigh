@@ -71,9 +71,14 @@ class UserSession(models.Model):
             is_active=True,
             username=self.user_name,
         )
-        user = base_user.get()
-        self.role = get_user_type(user)
-        self.name = "{} {}".format(user.first_name, user.last_name)
+        try:
+            user = base_user.get()
+            self.role = get_user_type(user)
+            self.name = "{} {}".format(user.first_name, user.last_name)
+
+        except Exception as e:
+            pass
+
         super(UserSession, self).save()
 
         @property
